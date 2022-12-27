@@ -20,8 +20,10 @@ public class LineComparison {
     public static void checkEquality(double lineOneLength, double lineTwoLength) {
         if (lineOneLength == lineTwoLength) {
             System.out.println("Lines are Equal");
+        } else if (lineOneLength > lineTwoLength) {
+            System.out.println("line 1 is greater than line 2");
         } else {
-            System.out.println("Lines are not Equal");
+            System.out.println("Line 1 is lesser than line 2");
         }
     }
 
