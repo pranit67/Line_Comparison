@@ -17,10 +17,23 @@ public class LineComparison {
         return lineLength;
     }
 
+    public static void checkEquality(double lineOneLength, double lineTwoLength) {
+        if (lineOneLength == lineTwoLength) {
+            System.out.println("Lines are Equal");
+        } else {
+            System.out.println("Lines are not Equal");
+        }
+    }
+
     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparison Program");
-        double lineLength = lineValues();
-        System.out.println("Length Of Line is: " + lineLength);
 
+        double lineOneLength = lineValues();
+        System.out.println("Length Of Line 1 is: " + lineOneLength);
+
+        double lineTwoLength = lineValues();
+        System.out.println("Length Of Line 2 is: " + lineTwoLength);
+
+        checkEquality(lineOneLength, lineTwoLength);
     }
 }
